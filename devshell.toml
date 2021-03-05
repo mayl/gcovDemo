@@ -1,0 +1,7 @@
+imports = ["language.c"]
+
+[devshell]
+packages = [ "meson", "ninja", "lcov" ]
+
+[language.c]
+compiler = "pkgs.gcc"
