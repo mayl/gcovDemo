@@ -4,4 +4,5 @@ imports = ["language.c"]
 packages = [ "meson", "ninja", "lcov" ]
 
 [language.c]
-compiler = "pkgs.gcc"
+compiler = "pkgs.gcc-unwrapped"
+libraries = ["glibc"]
