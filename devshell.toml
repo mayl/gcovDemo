@@ -1,7 +1,8 @@
 imports = ["language.c"]
 
 [devshell]
-packages = [ "meson", "ninja", "lcov" ]
+packages = [ "meson", "ninja", "lcov", "pkg-config" ]
 
 [language.c]
-compiler = "pkgs.gcc"
+compiler = "pkgs.gcc-unwrapped"
+libraries = ["glibc", "cpputest"]
